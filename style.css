@@ -1,0 +1,325 @@
+/*
+Theme Name: Bryan Murdaugh's WP Theme based on Joni Korpi's Less Framework
+Theme URI: http://wordpress.bryanmurdaugh.com
+Description: Scalable and awesome.
+Author: Bryan Murdaugh
+Author URI: http://wordpress.bryanmurdaugh.com/
+Version: 1.0
+Tags: green, brown, less framework
+
+Less Framework 4
+	http://lessframework.com
+	by Joni Korpi
+	License: http://creativecommons.org/licenses/MIT/	*/
+
+
+/*	Resets
+	------	*/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, 
+p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, 
+img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figure, figcaption, hgroup, 
+menu, footer, header, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, canvas, figure, figure img, figcaption, hgroup,
+footer, header, nav, section, audio, video {
+	display: block;
+}
+
+a img {border: 0;}
+
+textarea {
+	width: 100%;
+}
+
+#masthead {
+	text-align: center;
+}
+
+#logo {
+}
+
+.clearboth {
+	height: 0px;
+	width: 0px;
+	clear: both;
+}
+
+.menu {
+    }
+    
+    .menu ul {
+    }
+    
+        .menu li {
+            float: left;
+            list-style: none;
+            margin-left: 12px;
+        }
+        
+        .menu a {
+            background: #265a00;        
+            display: block;
+            padding: 11px 15px;
+            border: 1px solid rgb(195,195,195);
+            color: #fff;
+            -webkit-tap-highlight-color: rgba(0,0,0, 0);
+            -webkit-box-shadow: inset 0 0 5px rgba(0,0,0, 0.05);
+               -moz-box-shadow: inset 0 0 5px rgba(0,0,0, 0.05);
+                    box-shadow: inset 0 0 5px rgba(0,0,0, 0.05);
+            -webkit-border-radius: 3px;
+               -moz-border-radius: 3px;
+                    border-radius: 3px;
+            -webkit-transition: all 0.123s ease-out;
+               -moz-transition: all 0.123s ease-out;  
+                    transition: all 0.123s ease-out;
+        }
+        
+        .menu a:hover, .menu a:active {
+            background: #265a00;
+            text-decoration: none;
+            border-color: rgb(158,158,158);
+            -webkit-box-shadow: inset 0 0 8px rgba(0,0,0, 0.38);
+               -moz-box-shadow: inset 0 0 8px rgba(0,0,0, 0.38);
+                    box-shadow: inset 0 0 8px rgba(0,0,0, 0.38);
+        }
+        
+        .menu a:active, .menu .current_page_item {
+            background: #265a00;
+            border-color: rgb(23,37,60);
+            color: #fff;
+            text-shadow: 0 -1px 0 rgba(0,0,0, 0.9);
+            -webkit-box-shadow: inset 0 0 12px rgba(0,0,0, 0.765);
+               -moz-box-shadow: inset 0 0 12px rgba(0,0,0, 0.765);
+                    box-shadow: inset 0 0 12px rgba(0,0,0, 0.765);
+        }
+
+
+/*	Typography presets
+	------------------	*/
+
+.gigantic {
+	font-size: 100px;
+	line-height: 120px;
+	letter-spacing: -2px;
+}
+
+.huge, h1 {
+	font-size: 58px;
+	line-height: 72px;
+	letter-spacing: -1px;
+}
+
+.large, h2 {
+	font-size: 38px;
+	line-height: 48px;
+	margin: 24px 0px;
+}
+
+.bigger, h3 {
+	font-size: 26px;
+	line-height: 36px;
+	margin: 18px 0px;
+}
+
+.big, h4, h2.widgettitle {
+	font-size: 22px;
+	line-height: 30px;
+	margin: 12px 0px;
+}
+
+.children {
+	padding: 10px 0px 10px 30px;
+}
+
+.reply {
+	border-bottom: 2px white solid;
+}
+
+body {
+	font: 16px/24px Georgia, serif;
+	color: white;
+}
+
+p {
+	margin: 12px 0px;
+}
+
+.small, small {
+	font-size: 13px;
+	line-height: 18px;
+}
+
+a {
+	color: #baf4ff;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+#sidebar {
+	width: 252px;
+	float: right;
+	margin-top: 12px;
+}
+
+#sidebar li {
+	list-style: none;
+}
+
+/* Selection colours (easy to forget) */
+
+::selection 	 	{background: #774a23;}
+::-moz-selection 	{background: #774a23;}
+img::selection 		{background: transparent;}
+img::-moz-selection	{background: transparent;}
+body {-webkit-tap-highlight-color: #774a23;}
+
+
+
+/*		Default Layout: 992px. 
+		Gutters: 24px.
+		Outer margins: 48px.
+		Leftover space for scrollbars @1024px: 32px.
+-------------------------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8      9      10
+px      68    160    252    344    436    528    620    712    804    896    */
+
+#wrapper {
+	width: 896px;
+	padding: 72px 48px 84px;
+	background-color: #265a00;
+	background-image: url(./images/);
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
+	margin: 0 auto;
+}
+
+#content {
+	width: 620px;
+	float: left;
+}
+
+
+/*		Tablet Layout: 768px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	
+  #wrapper {
+  	width: 712px;
+  	padding: 48px 28px 60px;
+  	background-size: 100%;
+  }
+  	
+  #content {
+  	width: 436px;
+  	float: left;
+  }
+	
+}
+
+
+
+/*		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+
+@media only screen and (max-width: 767px) {
+	
+	#wrapper {
+		width: 252px;
+		padding: 48px 34px 60px;
+		background-size: 100%;
+	}
+
+	#logo {
+		width: 100%;
+	}
+	
+	.menu li {
+		width: 100%;
+		margin: 6px 0px;
+	}
+	
+	#sidebar {
+		clear: both;
+		float: none;
+	}
+	#content {
+		width: 100%;
+		margin-right: 0;
+		float: none;
+	}
+	
+}
+
+
+
+/*		Wide Mobile Layout: 480px.
+		Gutters: 24px.
+		Outer margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+	#wrapper {
+		width: 436px;
+		padding: 36px 22px 48px;
+		background-size: 100%;
+	}
+	
+	.menu li {
+		width: auto;
+		margin-left: 12px;
+	}
+	
+	#logo {
+		width: 100%;
+	}
+	
+	#sidebar {
+		clear: both;
+		float: none;
+	}
+
+}
+
+
+/*	Retina media query.
+	Overrides styles for devices with a 
+	device-pixel-ratio of 2+, such as iPhone 4.
+-----------------------------------------------    */
+
+@media 
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min-device-pixel-ratio: 2) {
+	
+	#wrapper {
+	
+	}
+	
+}
