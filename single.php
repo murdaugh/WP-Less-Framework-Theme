@@ -1,7 +1,6 @@
 <?php
 get_header();
 ?>
-<?php	four_pane(); ?>
 <div class="clearboth"></div>
 
 <div id="content">
