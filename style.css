@@ -194,7 +194,7 @@ body {-webkit-tap-highlight-color: #774a23;}
 cols    1     2      3      4      5      6      7      8      9      10
 px      68    160    252    344    436    528    620    712    804    896    */
 
-#wrapper {
+div#wrapper {
 	width: 896px;
 	padding: 72px 48px 84px;
 	background-color: #265a00;
@@ -222,13 +222,13 @@ px      68    160    252    344    436    528    620    712    */
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	
-  #wrapper {
+  div#wrapper {
   	width: 712px;
   	padding: 48px 28px 60px;
   	background-size: 100%;
   }
   	
-  #content {
+  div#content {
   	width: 436px;
   	float: left;
   }
@@ -247,26 +247,26 @@ px      68    160    252    */
 
 @media only screen and (max-width: 767px) {
 	
-	#wrapper {
+	div#wrapper {
 		width: 252px;
 		padding: 48px 34px 60px;
 		background-size: 100%;
 	}
 
-	#logo {
+	div#logo {
 		width: 100%;
 	}
 	
-	.menu li {
+	ul.menu li {
 		width: 100%;
 		margin: 6px 0px;
 	}
 	
-	#sidebar {
+	ul#sidebar {
 		clear: both;
 		float: none;
 	}
-	#content {
+	div#content {
 		width: 100%;
 		margin-right: 0;
 		float: none;
@@ -286,22 +286,18 @@ px      68    160    252    344    436    */
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 	
-	#wrapper {
+	div#wrapper {
 		width: 436px;
 		padding: 36px 22px 48px;
 		background-size: 100%;
 	}
 	
-	.menu li {
+	ul.menu li {
 		width: auto;
 		margin-left: 12px;
 	}
 	
-	#logo {
-		width: 100%;
-	}
-	
-	#sidebar {
+	div#sidebar {
 		clear: both;
 		float: none;
 	}
